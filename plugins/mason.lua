@@ -15,7 +15,7 @@ return {
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
       automatic_setup = true,
-      ensure_installed = { "eslint_d" },
+      ensure_installed = { "eslint_d", "typescript-language-server" },
     },
   },
   {
