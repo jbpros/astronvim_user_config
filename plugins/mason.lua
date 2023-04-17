@@ -15,7 +15,12 @@ return {
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
       automatic_setup = true,
-      ensure_installed = { "eslint_d", "typescript-language-server" },
+      ensure_installed = {
+        "docker-compose-language-server",
+        "dockerfile-language-server",
+        "eslint_d",
+        "typescript-language-server",
+      },
     },
   },
   {
