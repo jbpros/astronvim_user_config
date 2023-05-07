@@ -35,7 +35,6 @@ return {
     ["<M-Down>"] = { function() require("smart-splits").resize_down() end, desc = "Resize split down" },
     ["<M-Left>"] = { function() require("smart-splits").resize_left() end, desc = "Resize split left" },
     ["<M-Right>"] = { function() require("smart-splits").resize_right() end, desc = "Resize split right" },
-    ["<leader>e"] = { "<cmd>Neotree source=filesystem toggle<cr>", desc = "Open file explorer"}
   },
   t = {
     -- setting a mapping to false will disable it
