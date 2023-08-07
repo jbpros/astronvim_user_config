@@ -6,7 +6,7 @@ return {
       "williamboman/mason-lspconfig.nvim",
       -- overrides `require("mason-lspconfig").setup(...)`
       opts = {
-        ensure_installed = { "tsserver" }, -- automatically install lsp
+        ensure_installed = { "tsserver", "tailwindcss" }, -- automatically install lsp
       },
     },
   },
