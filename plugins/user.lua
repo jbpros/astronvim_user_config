@@ -45,5 +45,20 @@ return {
   {
     "digitaltoad/vim-pug",
     ft = "pug",
+  },
+  {
+    "jackMort/ChatGPT.nvim",
+    event = "VeryLazy",
+    config = function()
+      require("chatgpt").setup({
+        -- TODO: use this when https://github.com/jackMort/ChatGPT.nvim/issues/250 is fixed
+        -- api_key_cmd = "op read \"op://Personal/OpenAI API Key/api key\" --no-newline"
+      })
+    end,
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim"
+    }
   }
 }
