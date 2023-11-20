@@ -26,6 +26,19 @@ return {
   lsp = {
     -- customize lsp formatting options
     formatting = {
+      filter = function(client)
+        if client.name == "typescript-tools" then
+          return false
+        end
+
+        -- only enable null-ls for javascript files
+        -- if vim.bo.filetype == "javascript" then
+        --   return client.name == "null-ls"
+        -- end
+
+        -- enable all other clients
+        return true
+      end,
       -- control auto formatting on save
       format_on_save = {
         enabled = true, -- enable or disable format on save globally
@@ -50,7 +63,7 @@ return {
       -- "pyright"
     },
     setup_handlers = {
-      tsserver = function(_, opts) require("typescript").setup { server = opts } end
+      -- tsserver = function(_, opts) require("typescript").setup { server = opts } end
     }
   },
   -- Configure require("lazy").setup() options
