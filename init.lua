@@ -58,6 +58,11 @@ return {
       --   return true
       -- end
     },
+    mappings = {
+      n = {
+        ["<leader>lR"] = { ":TSToolsGoToSourceDefinition<cr>", desc = "Go to source definition" },
+      }
+    },
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
