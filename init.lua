@@ -60,6 +60,7 @@ return {
     },
     mappings = {
       n = {
+        ["<leader>lr"] = { ":lua vim.lsp.buf.rename()<cr>", desc = "Rename symbol" },
         ["<leader>lR"] = { ":TSToolsGoToSourceDefinition<cr>", desc = "Go to source definition" },
       }
     },
